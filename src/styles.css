@@ -1,0 +1,11 @@
+body {
+    padding: 5%;
+}
+#intro {
+    font-size: small;
+}
+
+#deadline {
+    font-weight: bold;
+    font-size: large;
+}
