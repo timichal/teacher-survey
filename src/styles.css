@@ -1,5 +1,7 @@
 body {
     padding: 5%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #intro, #consent {
@@ -15,6 +17,7 @@ body {
     width: 800px;
     max-width: 100%;
     margin: auto;
+    word-wrap: break-word;
 }
 
 .row {
@@ -30,6 +33,37 @@ body {
     display: none;
 }
 
-.row-center {
-    justify-content: center;
+.row-btn {
+    justify-content: space-evenly;
+}
+
+.breakword {
+    min-width: 15%;
+}
+
+@media only screen and (max-width: 500px) {
+    .survey-form {
+        word-wrap: initial;
+    }
+
+    .survey-form .col {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .row > .breakword:first-child {
+        transform: rotate(-90deg);
+        left: -25px;
+        top: 20px;
+    }
+
+    .row > .breakword:last-child {
+        transform: rotate(90deg);
+        left: 25px;
+        top: -20px;
+    }
+}
+
+.qsep {
+    margin-top: 40px;
 }
