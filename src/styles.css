@@ -1,11 +1,26 @@
 body {
     padding: 5%;
 }
-#intro {
-    font-size: small;
+#intro, #consent {
+    font-size: smaller;
 }
 
 #deadline {
     font-weight: bold;
     font-size: large;
+}
+
+.survey-form {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.row {
+    align-items: center;
+    padding-top: 10px;
+}
+
+.survey-assert {
+    font-size: small;
 }

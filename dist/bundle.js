@@ -115,7 +115,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\r\\n    padding: 5%;\\r\\n}\\r\\n#intro {\\r\\n    font-size: small;\\r\\n}\\r\\n\\r\\n#deadline {\\r\\n    font-weight: bold;\\r\\n    font-size: large;\\r\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\r\\n    padding: 5%;\\r\\n}\\r\\n#intro, #consent {\\r\\n    font-size: smaller;\\r\\n}\\r\\n\\r\\n#deadline {\\r\\n    font-weight: bold;\\r\\n    font-size: large;\\r\\n}\\r\\n\\r\\n.survey-form {\\r\\n    width: 800px;\\r\\n    max-width: 100%;\\r\\n    margin: auto;\\r\\n}\\r\\n\\r\\n.row {\\r\\n    align-items: center;\\r\\n    padding-top: 10px;\\r\\n}\\r\\n\\r\\n.survey-assert {\\r\\n    font-size: small;\\r\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -160,7 +160,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n//require('bootstrap');\n\n\n\nvar test = function test() {\n  return console.log(\"test!\");\n};\n\ntest();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n//require('bootstrap');\n\n\n\nvar test = function test() {\n  return console.log(\"test!\");\n};\n\ntest();\n\nwindow.onbeforeunload = function () {\n  return 'Are you sure you want to navigate away from this page?';\n};\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
