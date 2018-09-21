@@ -4,6 +4,10 @@ body {
     margin: auto;
 }
 
+h5, h4 {
+    line-height: 1.5;
+}
+
 #intro, #consent {
     font-size: smaller;
 }
@@ -35,10 +39,30 @@ body {
 
 .row-btn {
     justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.row-btn-nomargin {
+    justify-content: space-evenly;
 }
 
 .breakword {
     min-width: 15%;
+}
+
+.btn-long {
+    white-space: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#reflection_free {
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.checkform {
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 500px) {
