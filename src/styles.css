@@ -1,6 +1,7 @@
 body {
     padding: 5%;
 }
+
 #intro, #consent {
     font-size: smaller;
 }
@@ -23,4 +24,12 @@ body {
 
 .survey-assert {
     font-size: small;
+}
+
+.hidden {
+    display: none;
+}
+
+.row-center {
+    justify-content: center;
 }
