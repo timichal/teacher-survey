@@ -23,12 +23,6 @@ $(function () {
         $("#content_"+nextPart).show("fast").addClass("visible");
         $("html, body").animate({ scrollTop: 150 }, "fast");
 
-        // email prompt switcher
-        if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
-            console.log("email not filled in")   
-            $("#final-email").show();
-        }
-
         // window unload alert, removed at the end
         window.onbeforeunload = function() {
             return 'Opravdu chcete opustit tuto stránku? Můžete přijít o vyplněné odpovědi!';
@@ -41,7 +35,7 @@ $(function () {
         }
 
         // we use the page switching buttons to save the answers as well
-        let radio_questions = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18"]
+        let radio_questions = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "gender", "work", "fulltime", "head_teacher"]
         radio_questions.forEach((question) => {
             answers[question] = $("[name='" + question + "']:checked").val();
         })
@@ -64,6 +58,26 @@ $(function () {
             answers.reflection = reflection_answers;
         }
 
+        // answers for the subject checkboxes & freeform form an array
+        let subjects_answers = [];
+        $("[name='subjects']:checked").each(function() {
+            subjects_answers.push($(this).val());
+        })
+        if ($("[name='subjects_free']").val()) {
+            subjects_answers.push($("[name='subjects_free']").val());
+        }
+
+        if (subjects_answers.length > 0) {
+            answers.subjects = subjects_answers;
+        }
+
+
+        // email prompt switcher
+        if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
+            console.log("email not filled in")   
+            $("#final-email").show();
+        }
+        
         // sending the answers when the user reaches the end
         if ( (nextPart === "end") || (nextPart === "6") ) {
             sendAnswers(answers);

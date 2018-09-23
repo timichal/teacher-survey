@@ -8,6 +8,15 @@ h5, h4 {
     line-height: 1.5;
 }
 
+.header-img {
+    height: 2em;
+}
+
+.flexdiv {
+    flex: 1;
+    text-align: center;
+}
+
 #intro, #consent {
     font-size: smaller;
 }
@@ -74,6 +83,10 @@ h5, h4 {
     margin-left: 5px;
 }
 
+.qsep {
+    margin-top: 40px;
+}
+
 @media only screen and (max-width: 500px) {
     .survey-form {
         word-wrap: initial;
@@ -103,8 +116,9 @@ h5, h4 {
     #survey-consent {
         margin: initial;
     }
+
+    .work {
+        margin-left: 5%;
+    }
 }
 
-.qsep {
-    margin-top: 40px;
-}
