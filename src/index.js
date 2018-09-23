@@ -21,7 +21,7 @@ $(function () {
         $(".visible").hide(500).removeClass("visible");
         let nextPart = $(this).attr("data-to-part");
         $("#content_"+nextPart).show("fast").addClass("visible");
-        $("html, body").animate({ scrollTop: 200 }, "fast");
+        $("html, body").animate({ scrollTop: 150 }, "fast");
 
         // email prompt switcher
         if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
