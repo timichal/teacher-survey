@@ -8,12 +8,12 @@
   <body>
     <script src="dist/bundle.js"></script>
     <div id="header">
-        <h2><strong>Názory učitelů na využívání žákovské zpětné vazby při hodnocení výuky</strong></h2>
+        <h3><strong>Názory učitelů na využívání žákovské zpětné vazby při hodnocení výuky</strong></h3>
         <h5>Dotazníkové šetření</h5>
         <hr>
     </div>
     <div id="content_1" class="visible">
-        <h4>Vážení pedagogové,</h4>
+        <h5>Vážení pedagogové,</h5>
         <div id="intro">
         <p>velice si vážím Vašeho zájmu zúčastnit se mého výzkumu.</p>
 
@@ -23,7 +23,7 @@
 
         <p>Výsledkem výzkumu bude analytická zpráva, kterou budu publikovat na české i anglické akademické půdě a která poslouží jako podklad pro další zkoumání dané problematiky. Otázky spojené se zapojováním hlasu žáků do vzdělávávání silně rezonují a bylo by nežádoucí, aby v této spojitosti hlas učitelů zapadnul. Ráda bych vám, kteří máte tak zásadní roli ve vzdělávacím systému, zprostředkovala možnost se vyjádřit k tématu, které může mít významný vliv na vaši profesi.</p>
 
-        <p>Vzhledem k tomu, že si zároveň uvědomuji, jak časově náročná práce ve školství je, navrhla jsem dotazník tak, aby zabral co nejméně času - jeho vyplnění by vám mělo trvat přibližně 5 minut. Pokud vás však téma zaujme, budete mít možnost pokračovat k podrobnějším otázkám, popřípadě vyjádřit zájem poskytnout osobní rozhovor.</p>
+        <p>Vzhledem k tomu, že si zároveň uvědomuji, jak časově náročná práce ve školství je, navrhla jsem dotazník tak, aby zabral co nejméně času - <strong>jeho vyplnění by vám mělo trvat přibližně 5 minut</strong>. Pokud vás však téma zaujme, budete mít možnost pokračovat k podrobnějším otázkám, popřípadě vyjádřit zájem poskytnout osobní rozhovor.</p>
 
         <p id="deadline">Dotazník prosím vyplňte nejpozději do 8. října 2018.</p>
 
@@ -46,21 +46,21 @@
         
         <h4>Informovaný souhlas</h4>
         <div id="consent">
-        <p>Několik nezbytných formalit na začátek: prosím přečtěte si pečlivě tento text a pokud máte jakékoli otázky, můžete mě kontaktovat níže uvedenými způsoby.</p>
+        <p>Několik nezbytných formalit na začátek: prosím přečtěte si pečlivě tento text a pokud máte jakékoli otázky, můžete mě kontaktovat výše uvedenými způsoby.</p>
 
-        <p>Je mou povinností zdůraznit, že máte plné právo se rozhodnout, že se výzkumu nezúčastníte. Zároveň pokud se rozhodnete výzkumu zúčastnit, máte právo kdykoli v průběhu dotazníku toto rozhodnutí změnit.</p>
+        <p>Je mou povinností zdůraznit, že máte plné právo se rozhodnout, že se výzkumu nezúčastníte. Zároveň pokud se rozhodnete výzkumu zúčastnit, máte právo kdykoli v průběhu dotazníku toto rozhodnutí změnit. V takovém případě jednoduše zavřete okno prohlížeče.</p>
 
         <p>Ve chvíli, kdy odešlete svoje odpovědi, už není možné je ze záznamu vyjmout, jsou totiž uloženy anonymně a tudíž není možné je identifikovat.</p>
 
         <p>Všechny odpovědi a informace, které poskytujete v rámci tohoto dotazníku jsou důvěrné a bude s nimi tak nakládáno. Záznamy odpovědí budou bezpečně uloženy a zaheslovány. Veškeré publikované výstupy budou anonymní a nebude možné dohledat jednotlivé respondenty.</p>
 
-        <p>Tento výzkum byl schválen etickou komisí pedagogické fakulty při univerzitě v Durhamu (School of Education Ethics Sub-Committee at Durham University) ke dni 31. srpna 2018.</p>
+        <p><strong>Tento výzkum byl schválen etickou komisí pedagogické fakulty při univerzitě v Durhamu (School of Education Ethics Sub-Committee at Durham University) ke dni 31. srpna 2018.</strong></p>
         </div>
 
         <div id="consent-form">
         <h4>Zaškrtnutím "Ano" prosím potvrďte, že jste byli seznámeni s náležitostmi výzkumu.</h4>
 
-        <form class="survey-form">
+        <form class="survey-form" id="survey-consent">
           <div class="row">
             <div class="col survey-assert">
               Chci se zúčastnit tohoto výzkumu na základě své svobodné vůle.
@@ -69,7 +69,7 @@
                 <input class="form-check-input consent_btn" type="radio" name="consent1" id="consent1_yes" value="yes">
                 <label class="form-check-label" for="consent1_yes">Ano</label>
             </div>
-            <div class="col">
+            <div class="col consent-no">
               <input class="form-check-input consent_btn" type="radio" name="consent1" id="consent1_no" value="no">
               <label class="form-check-label" for="consent1_no">Ne</label>
             </div>
@@ -82,7 +82,7 @@
                 <input class="form-check-input consent_btn" type="radio" name="consent2" id="consent2_yes" value="yes">
                 <label class="form-check-label" for="consent2_yes">Ano</label>
             </div>
-            <div class="col">
+            <div class="col consent-no">
               <input class="form-check-input consent_btn" type="radio" name="consent2" id="consent2_no" value="no">
               <label class="form-check-label" for="consent2_no">Ne</label>
             </div>
@@ -95,7 +95,7 @@
                 <input class="form-check-input consent_btn" type="radio" name="consent3" id="consent3_yes" value="yes">
                 <label class="form-check-label" for="consent3_yes">Ano</label>
             </div>
-            <div class="col">
+            <div class="col consent-no">
               <input class="form-check-input consent_btn" type="radio" name="consent3" id="consent3_no" value="no">
               <label class="form-check-label" for="consent3_no">Ne</label>
             </div>
@@ -108,7 +108,7 @@
                 <input class="form-check-input consent_btn" type="radio" name="consent4" id="consent4_yes" value="yes">
                 <label class="form-check-label" for="consent4_yes">Ano</label>
             </div>
-            <div class="col">
+            <div class="col consent-no">
               <input class="form-check-input consent_btn" type="radio" name="consent4" id="consent4_no" value="no">
               <label class="form-check-label" for="consent4_no">Ne</label>
             </div>
@@ -116,7 +116,7 @@
           </form>
         </div>
           <div class="row row-btn">
-              <button type="button" class="btn btn-primary btn-lg btn-toPart" id="consent_btn" data-to-part="2" disabled>Pokračovat</button>
+              <button type="button" class="btn btn-primary btn-lg btn-toPart" id="consent_btn" data-to-part="2" disabled>Další</button>
           </div>
         
         </div>
@@ -839,15 +839,17 @@
 
     <div id="content_10" class="hidden">
         <h2>Děkuji Vám za Vaše odpovědi!</h2>
-        <p>Pokud máte k tématu stále co říct a ještě jste tak neučinili v půlovině dotazníku, můžete mi na sebe zanechat e-mailovou adresu, prostřednictvím které Vás budu moct kontaktovat a domluvit osobní rozhovor. Rozhovory budou probíhat během prvního říjnového týdne v závislosti na individuální domluvě. Vaše adresa nebude použita k žádnému jinému účelu a po skončení výzkumu bude zcela odstraněna z mých záznamů. Po zadání emailu do dotazníku bude možné Vaše odpovědi s touto adresou spojit; pokud se Vám tato představa příčí, ale přesto byste rád/a rozhovor poskytla, napište mi prosím na josefina.paloudova@durham.ac.uk.</p>
 
-        <form class="survey-form">
-          <div class="form-group">
-            <label for="email">Vaše e-mailová adresa (pouze v přápadě zájmu o osobní rozhovor):</label>
-            <input type="email" name="email_input" class="form-control" id="email_input" placeholder="muj@mail.cz">
-          </div>
-        </form>
+        <div class="hidden" id="final-email">
+            <p>Pokud máte k tématu stále co říct a ještě jste tak neučinili v půlovině dotazníku, můžete mi na sebe zanechat e-mailovou adresu, prostřednictvím které Vás budu moct kontaktovat a domluvit osobní rozhovor. Rozhovory budou probíhat během prvního říjnového týdne v závislosti na individuální domluvě. Vaše adresa nebude použita k žádnému jinému účelu a po skončení výzkumu bude zcela odstraněna z mých záznamů. Po zadání emailu do dotazníku bude možné Vaše odpovědi s touto adresou spojit; pokud se Vám tato představa příčí, ale přesto byste rád/a rozhovor poskytla, napište mi prosím na josefina.paloudova@durham.ac.uk.</p>
 
+            <form class="survey-form">
+              <div class="form-group">
+                <label for="email">Vaše e-mailová adresa (pouze v přápadě zájmu o osobní rozhovor):</label>
+                <input type="email" name="email_input" class="form-control" id="email_input" placeholder="muj@mail.cz">
+              </div>
+            </form>
+        </div>
         <div class="row row-btn">
             <button type="button" class="btn btn-primary btn-lg btn-toPart" data-to-part="end">Odeslat odpovědi</button>
         </div>

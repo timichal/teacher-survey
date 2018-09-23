@@ -17,6 +17,10 @@ h5, h4 {
     font-size: large;
 }
 
+.consent-no {
+    left: -20%;
+}
+
 .survey-form {
     width: 800px;
     max-width: 100%;
@@ -30,7 +34,7 @@ h5, h4 {
 }
 
 .survey-assert {
-    font-size: small;
+    font-size: smaller;
 }
 
 .hidden {
@@ -48,6 +52,10 @@ h5, h4 {
 
 .breakword {
     min-width: 15%;
+}
+
+#survey-consent {
+    margin: 0 25%;
 }
 
 .btn-long {
@@ -85,6 +93,14 @@ h5, h4 {
         transform: rotate(90deg);
         left: 25px;
         top: -20px;
+    }
+
+    .consent-no {
+        left: initial;
+    }
+
+    #survey-consent {
+        margin: initial;
     }
 }
 

@@ -22,6 +22,12 @@ $(function () {
         let nextPart = $(this).attr("data-to-part");
         $("#content_"+nextPart).show("fast").addClass("visible");
         $("html, body").animate({ scrollTop: 200 }, "fast");
+
+        // email prompt switcher
+        if ( (nextPart === 10) && !(answers.hasOwnProperty("email_input")) ) {
+            $("#final-email").show();
+        }
+
         // window unload alert, removed at the end
         window.onbeforeunload = function() {
             return 'Opravdu chcete opustit tuto stránku? Můžete přijít o vyplněné odpovědi!';
@@ -58,7 +64,7 @@ $(function () {
         }
 
         // sending the answers when the user reaches the end
-        if (nextPart === "end") {
+        if ( (nextPart === "end") || (nextPart === "6") ) {
             sendAnswers(answers);
         }
 
@@ -81,6 +87,7 @@ function sendAnswers(answers) {
         data: JSON.stringify(answers),
         dataType: "json",
         success: function success(response) {
+            console.log(response);
         }
     });
 }
