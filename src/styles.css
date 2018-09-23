@@ -2,7 +2,7 @@ body {
     padding: 5%;
     max-width: 1200px;
     margin: auto;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h5, h4 {
