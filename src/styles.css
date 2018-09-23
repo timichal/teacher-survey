@@ -57,12 +57,12 @@ h5, h4 {
 }
 
 .row-btn {
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 40px;
 }
 
 .row-btn-nomargin {
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .breakword {

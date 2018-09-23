@@ -40,7 +40,7 @@ $(function () {
             answers[question] = $("[name='" + question + "']:checked").val();
         })
 
-        let text_questions = ["part1_feedback", "part2_feedback", "part3_feedback", "popularity", "email_input"]
+        let text_questions = ["part1_feedback", "part2_feedback", "part3_feedback", "popularity", "email_input", "email_input_end"]
         text_questions.forEach((question) => {
             answers[question] = $("[name='" + question + "'").val();
         })
