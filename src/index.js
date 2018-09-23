@@ -24,7 +24,8 @@ $(function () {
         $("html, body").animate({ scrollTop: 200 }, "fast");
 
         // email prompt switcher
-        if ( (nextPart === 10) && !(answers.hasOwnProperty("email_input")) ) {
+        if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
+            console.log("email not filled in")   
             $("#final-email").show();
         }
 
