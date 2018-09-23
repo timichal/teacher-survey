@@ -21,7 +21,7 @@ $(function () {
         $(".visible").hide(500).removeClass("visible");
         let nextPart = $(this).attr("data-to-part");
         $("#content_"+nextPart).show("fast").addClass("visible");
-        $("html, body").animate({ scrollTop: 150 }, "fast");
+        $("html, body").animate({ scrollTop: 200 }, "fast");
 
         // window unload alert, removed at the end
         window.onbeforeunload = function() {
@@ -74,16 +74,13 @@ $(function () {
 
         // email prompt switcher
         if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
-            console.log("email not filled in")   
             $("#final-email").show();
         }
-        
+
         // sending the answers when the user reaches the end
         if ( (nextPart === "end") || (nextPart === "6") ) {
             sendAnswers(answers);
         }
-
-        console.log(answers);
     });
 });
 
@@ -102,7 +99,6 @@ function sendAnswers(answers) {
         data: JSON.stringify(answers),
         dataType: "json",
         success: function success(response) {
-            console.log(response);
         }
     });
 }
