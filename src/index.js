@@ -62,10 +62,20 @@ $(function () {
             answers[question] = $("[name='" + question + "']:checked").val();
         })
 
-        let text_questions = ["part1_feedback", "part2_feedback", "part3_feedback", "popularity", "email_input", "email_input_end"]
+        let text_questions = ["part1_feedback", "part2_feedback", "part3_feedback", "popularity", "email_input", "email_input_end", "age"]
         text_questions.forEach((question) => {
             answers[question] = $("[name='" + question + "'").val();
         })
+
+        // answers for the field checkboxes & freeform form an array
+        let field_answers = [];
+        $("[name='field']:checked").each(function() {
+            field_answers.push($(this).val());
+        })
+
+        if (field_answers.length > 0) {
+            answers.field = field_answers;
+        }
 
         // answers for the reflection checkboxes & freeform form an array
         let reflection_answers = [];

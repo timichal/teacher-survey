@@ -120,7 +120,7 @@
           </form>
         </div>
           <div class="row row-btn">
-              <button type="button" class="btn btn-primary btn-lg btn-toPart" id="consent_btn" data-to-part="2" disabled>Další</button>
+              <button type="button" class="btn btn-primary btn-lg btn-toPart" id="consent_btn" data-to-part="demo" disabled>Další</button>
           </div>
         
         </div>
@@ -449,25 +449,6 @@
         <p>Na závěr, prosím, uveďte několik základních údajů o sobě. Vyplnění není povinné.</p>
 
 
-        <h4 class="qsep">Pohlaví</h4>
-        <form class="survey-form">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                  <input class="form-check-input" type="radio" name="gender" id="gender_female" value="žena">
-                  <label class="form-check-label" for="gender_female">
-                    Žena
-                  </label>
-                </div>
-                <div class="col">
-                  <input class="form-check-input" type="radio" name="gender" id="gender_male" value="muž">
-                  <label class="form-check-label" for="gender_male">
-                    Muž
-                  </label>
-                </div>
-            </div>
-        </form>
-
         <h4 class="qsep">Jak dlouhá je Vaše pedagogická praxe?</h4>
         <form class="survey-form work">
             <div class="row">
@@ -532,6 +513,49 @@
             </div>
         </form>
 
+        <h4 class="qsep">Obor pedagogické praxe:</h4>
+                <form class="survey-form work">
+                    <div class="row">
+                        <div class="col">
+                          <input class="form-check-input" type="checkbox" name="field" id="field_0" value="Všeobecné">
+                          <label class="form-check-label" for="field_0">
+                            Učitel všeobecně-vzdělávacích předmětů
+                          </label>
+                        </div>
+                        <div class="col">
+                          <input class="form-check-input" type="checkbox" name="field" id="field_1" value="Odborné">
+                          <label class="form-check-label" for="field_1">
+                            Učitel odborných předmětů
+                          </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <input class="form-check-input" type="checkbox" name="field" id="field_2" value="Praktické">
+                          <label class="form-check-label" for="field_2">
+                            Učitel praktického vyučování
+                          </label>
+                        </div>
+                        <div class="col">
+                          <input class="form-check-input" type="checkbox" name="field" id="field_3" value="Odborný výcvik">
+                          <label class="form-check-label" for="field_3">
+                            Učitel odborného výcviku
+                          </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <input class="form-check-input" type="checkbox" name="field" id="field_4" value="Umělecké">
+                          <label class="form-check-label" for="field_4">
+                           Učitel uměleckých odborných předmětů
+                          </label>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                </form>
+        </h4>
+
         <h4 class="qsep">Učíte na plný úvazek?</h4>
         <form class="survey-form">
             <div class="row">
@@ -552,38 +576,48 @@
         </form>
 
         <h4 class="qsep">Vyberte předměty, které učíte.</h4>
-        <form class="checkform">
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects1" value="Čeština">
-              <label class="form-check-label" for="subjects1">Český jazyk</label>
+        <form class="survey-form work">
+            <div class="row">
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects1" value="Čeština">
+                  <label class="form-check-label" for="subjects1">Český jazyk</label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects2" value="Matematika">
+                  <label class="form-check-label" for="subjects2">Matematika</label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects3" value="ZSV">
+                  <label class="form-check-label" for="subjects3">ZSV</label>
+                </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects2" value="Matematika">
-              <label class="form-check-label" for="subjects2">Matematika</label>
+            <div class="row">
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects4" value="Angličtina">
+                  <label class="form-check-label" for="subjects4">Anglický jazyk</label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects5" value="Dějepis">
+                  <label class="form-check-label" for="subjects5">Dějepis</label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects6" value="IVT">
+                  <label class="form-check-label" for="subjects6">IVT</label>
+                </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects3" value="ZSV">
-              <label class="form-check-label" for="subjects3">ZSV</label>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                  <input class="form-check-input" name="subjects" type="checkbox" id="subjects7" value="Praktická výuka">
+                  <label class="form-check-label" for="subjects7">Praktická výuka</label>
+                </div>
+                <div class="col">
+                </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects4" value="Angličtina">
-              <label class="form-check-label" for="subjects4">Anglický jazyk</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects5" value="Dějepis">
-              <label class="form-check-label" for="subjects5">Dějepis</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects6" value="IVT">
-              <label class="form-check-label" for="subjects6">IVT</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" name="subjects" type="checkbox" id="subjects7" value="Praktická výuka">
-              <label class="form-check-label" for="subjects7">Praktická výuka</label>
-            </div>
-        </form>
 
-        <textarea class="form-control" id="subjects_free" name="subjects_free" placeholder="Vepište případné jiné možnosti..." rows="1"></textarea>
+            <textarea class="form-control" id="subjects_free" name="subjects_free" placeholder="Vepište případné jiné možnosti..." rows="1"></textarea>
+        </form>
 
         <h4 class="qsep">Působíte na pozici třídního učitele?</h4>
         <form class="survey-form">
@@ -603,6 +637,31 @@
                 </div>
             </div>
         </form>
+
+        <h4 class="qsep">Pohlaví</h4>
+        <form class="survey-form">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="gender" id="gender_female" value="žena">
+                  <label class="form-check-label" for="gender_female">
+                    Žena
+                  </label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="gender" id="gender_male" value="muž">
+                  <label class="form-check-label" for="gender_male">
+                    Muž
+                  </label>
+                </div>
+            </div>
+        </form>
+
+        <h4 class="qsep">Věk</h4>
+        <form class="survey-form">
+            <input type="text" class="form-control" id="age" name="age" placeholder="Sem vepište svůj věk...">
+        </form>
+
         <div class="row row-btn">
             <button type="button" class="btn btn-primary btn-lg btn-toPart" data-to-part="5">Odeslat odpovědi</button>
         </div>
