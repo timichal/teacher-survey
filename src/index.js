@@ -4,7 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css'
 
 $(function () {
-    const stamp = Date.now() + Math.floor(Math.random() * 10000);
+    const date = new Date(Date.now()).toISOString();
+    const dateStamp = date.substring(8,10) + "|" + ((parseInt(date.substring(11,13))+2) % 24) + date.substring(13,19) + "|";
+    
+    const code = window.location.href.split("?")[1]
+    let uid;
+    //document.cookie = "uid=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    if (document.cookie.includes("uid")) {
+        uid = document.cookie.substring(4,)
+    } else {
+        uid = Math.floor(Math.random() * 10000)
+        document.cookie = "uid=" + uid;
+    }
+
+    const stamp = dateStamp + code + "|" + uid;
+
+    console.log(stamp);
     let answers = {};
     answers.uid = stamp;
 
@@ -14,6 +29,13 @@ $(function () {
         } else {
             $('#consent_btn').prop('disabled', true);
         }
+    });
+
+    $(".btn-mail").click(function() {
+        answers["email_input_end"] = $("[name='email_input_end']").val();
+        sendAnswers(answers);
+        $("#final-email").hide("fast");
+        $("#final-email-sent").show("fast");
     });
 
     $(".btn-toPart").click(function() {
@@ -71,14 +93,15 @@ $(function () {
             answers.subjects = subjects_answers;
         }
 
-
         // email prompt switcher
-        if ( (nextPart === "10") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
+        if ( (nextPart === "end") && ( !(answers.hasOwnProperty("email_input")) || answers.email_input === "" ) ) {
             $("#final-email").show();
         }
 
+        console.log(answers);
+
         // sending the answers when the user reaches the end
-        if ( (nextPart === "end") || (nextPart === "6") ) {
+        if ( (nextPart === "midend") || (nextPart === "end") || (nextPart === "5") ) {
             sendAnswers(answers);
         }
     });
@@ -99,6 +122,7 @@ function sendAnswers(answers) {
         data: JSON.stringify(answers),
         dataType: "json",
         success: function success(response) {
+            console.log(response);
         }
     });
 }
